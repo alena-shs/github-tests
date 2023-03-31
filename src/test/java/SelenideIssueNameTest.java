@@ -9,18 +9,21 @@ import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 
 public class SelenideIssueNameTest {
+    private static final String REPONAME = "eroshenkoam/allure-example";
+    private static final int ISSUE_NUMBER = 80;
+    private static final String ISSUE_NAME = "e.sh";
+    SelenideElement searchField = $(".header-search-input");
+
     @Test
     public void testIssue80() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
-        SelenideElement searchField = $(".header-search-input");
-
         open("https://github.com");
         searchField.click();
-        searchField.sendKeys("eroshenkoam/allure-example");
+        searchField.sendKeys(REPONAME);
         searchField.submit();
-        $(linkText("eroshenkoam/allure-example")).click();
+        $(linkText(REPONAME)).click();
         $("#issues-tab").click();
-        $("#issue_80_link").shouldHave(exactText("e.sh"));
+        $("#issue_"+ISSUE_NUMBER+"_link").shouldHave(exactText(ISSUE_NAME));
     }
 }
