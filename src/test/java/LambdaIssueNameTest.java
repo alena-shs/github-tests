@@ -1,5 +1,7 @@
 import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.*;
 import io.qameta.allure.selenide.AllureSelenide;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.exactText;
@@ -13,6 +15,11 @@ import static data.TestData.*;
 public class LambdaIssueNameTest {
 
     @Test
+    @Feature("Issue section in a repository")
+    @Story("All the attributes of created issues are shown correctly (lambda")
+    @Owner("a.shomanova")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Issue number to issue name correct mapping (lambda)")
     public void issueHasCorrectTextTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
