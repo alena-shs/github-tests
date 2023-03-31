@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static org.openqa.selenium.By.linkText;
 
-public class IssueNameTest {
+public class SelenideIssueNameTest {
     @Test
     public void testIssue80() {
         SelenideLogger.addListener("allure", new AllureSelenide());
