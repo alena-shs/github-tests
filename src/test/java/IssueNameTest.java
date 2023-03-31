@@ -1,4 +1,6 @@
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.exactText;
@@ -9,6 +11,8 @@ import static org.openqa.selenium.By.linkText;
 public class IssueNameTest {
     @Test
     public void testIssue80() {
+        SelenideLogger.addListener("allure", new AllureSelenide());
+
         SelenideElement searchField = $(".header-search-input");
 
         open("https://github.com");
