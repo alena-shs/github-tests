@@ -14,11 +14,11 @@ import static data.TestData.*;
 public class IssueNameTestWithAttachments {
 
     @Test
-    @Feature("Issue section in a repository")
-    @Story("All the attributes of created issues are shown correctly （lambda, annotations + attachments）")
+    @Feature("Issue section in a repository - with attachments")
+    @Story("Attributes of issues are correct")
     @Owner("a.shomanova")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Issue number to issue name correct mapping （lambda, annotations + attachments）")
+    @DisplayName("Issue number to issue name correct mapping - annotated with attachments")
     public void IssueHasCorrectTextTestScreenshot() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
@@ -37,6 +37,11 @@ public class IssueNameTestWithAttachments {
     }
 
     @Test
+    @Feature("Issue section in a repository - with attachments")
+    @Story("Attributes of issues are correct")
+    @Owner("a.shomanova")
+    @Severity(SeverityLevel.NORMAL)
+    @DisplayName("Issue number to issue name correct mapping - lambda with attachments")
     public void IssueHasCorrectTextTestSource() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 

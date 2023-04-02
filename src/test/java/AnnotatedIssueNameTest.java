@@ -9,11 +9,11 @@ import static data.TestData.*;
 public class AnnotatedIssueNameTest {
 
     @Test
-    @Feature("Issue section in a repository")
-    @Story("All the attributes of created issues are shown correctly (annotations)")
+    @Feature("Issue section in a repository - tests with annotations")
+    @Story("Attributes of issues are correct")
     @Owner("a.shomanova")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Issue number to issue name correct mapping (annotations)")
+    @DisplayName("Issue number to issue name correct mapping")
     public void issueHasCorrectTextTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 

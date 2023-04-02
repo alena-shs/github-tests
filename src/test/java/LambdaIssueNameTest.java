@@ -15,11 +15,11 @@ import static data.TestData.*;
 public class LambdaIssueNameTest {
 
     @Test
-    @Feature("Issue section in a repository")
-    @Story("All the attributes of created issues are shown correctly (lambda")
+    @Feature("Issue section in a repository - tests with lambda")
+    @Story("Attributes of issues are correct")
     @Owner("a.shomanova")
     @Severity(SeverityLevel.NORMAL)
-    @DisplayName("Issue number to issue name correct mapping (lambda)")
+    @DisplayName("Issue number to issue name correct mapping")
     public void issueHasCorrectTextTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
