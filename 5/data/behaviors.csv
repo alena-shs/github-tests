@@ -1,0 +1,5 @@
+"Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
+"","Issue section in a repository - standard","Attributes of issues are correct","0","0","1","0","0"
+"","Issue section in a repository - tests with lambda","Attributes of issues are correct","0","0","1","0","0"
+"","Issue section in a repository - with attachments","Attributes of issues are correct","0","0","2","0","0"
+"","Issue section in a repository - tests with annotations","Attributes of issues are correct","0","0","1","0","0"
