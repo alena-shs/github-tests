@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Apr 02 20:20:58 GMT 2023","Sun Apr 02 20:21:01 GMT 2023","2985","","IssueNameTestWithAttachments","","IssueNameTestWithAttachments","IssueHasCorrectTextTestSource","Issue number to issue name correct mapping - lambda with attachments",""
+"passed","Sun Apr 02 20:21:06 GMT 2023","Sun Apr 02 20:21:09 GMT 2023","2435","","SelenideIssueNameTest","","SelenideIssueNameTest","issueHasCorrectTextTest","Issue number to issue name correct mapping",""
+"passed","Sun Apr 02 20:20:50 GMT 2023","Sun Apr 02 20:20:57 GMT 2023","7512","","AnnotatedIssueNameTest","","AnnotatedIssueNameTest","issueHasCorrectTextTest","Issue number to issue name correct mapping",""
+"passed","Sun Apr 02 20:21:01 GMT 2023","Sun Apr 02 20:21:04 GMT 2023","3012","","IssueNameTestWithAttachments","","IssueNameTestWithAttachments","IssueHasCorrectTextTestScreenshot","Issue number to issue name correct mapping - annotated with attachments",""
+"passed","Sun Apr 02 20:21:04 GMT 2023","Sun Apr 02 20:21:06 GMT 2023","2409","","LambdaIssueNameTest","","LambdaIssueNameTest","issueHasCorrectTextTest","Issue number to issue name correct mapping",""
